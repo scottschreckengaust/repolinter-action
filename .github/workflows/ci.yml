@@ -26,7 +26,5 @@ jobs:
         run: |
           npm --version
           node --version
-          ls -al
-          ls -al repo
-          # npm install
-          # node ./bin/repolinter.js lint --git https://
+          npm install
+          node ./bin/repolinter.js lint ./repo -r ./ruleset.json
