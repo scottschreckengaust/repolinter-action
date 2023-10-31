@@ -16,10 +16,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           cache: 'npm'
-      - uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
+      # - uses: ruby/setup-ruby@v1
+      #   with:
+      #     bundler-cache: true
       - name: Run a multi-line script
         run: |
           npm --version
-          gem --version
+          node --version
+          ls -l
+          # npm install
+          # node ./bin/repolinter.js lint --git https://
