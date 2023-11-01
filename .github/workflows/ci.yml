@@ -26,5 +26,7 @@ jobs:
         run: |
           npm --version
           node --version
+          gem --version
+          gem install github-linguist licensee
           npm install
           node ./bin/repolinter.js lint ./repo -r ./ruleset.json
